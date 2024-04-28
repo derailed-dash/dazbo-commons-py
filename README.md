@@ -32,11 +32,13 @@ dazbo-commons/
 
 ## To Install and Use
 
+You can simply install the package from [PyPi](https://pypi.org/project/dazbo-commons/). There's no need to clone this repo.
+
 ```bash
 pip install dazbo-commons
 ```
 
-In your Python code, include this `import`:
+Then, in your Python code, include this `import`:
 
 ```python
 import dazbo_commons as dc
