@@ -38,6 +38,7 @@ coverage.xml
 # secrets
 *.key
 .gitsecret/keys/random_seed
+.pypirc
  
 # Random
 .vscode

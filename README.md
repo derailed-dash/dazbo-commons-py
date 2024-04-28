@@ -25,9 +25,9 @@ dazbo-commons/
 ├── .env
 ├── .gitignore
 ├── LICENSE
+├── pyproject.toml
 ├── README.md
-├── requirements.txt
-└── setup.py
+└── requirements.txt
 ```
 
 ## To Install and Use
@@ -89,7 +89,7 @@ py -m pip install twine
 py -m pip install --upgrade build
 ```
 
-5. Make any required updates to the `setup.py` file. E.g. the `version` attribute.
+5. Make any required updates to the `pyproject.toml` file. E.g. the `version` attribute.
 
 6. Build the package.
 
