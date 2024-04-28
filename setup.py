@@ -5,10 +5,10 @@ setup(
     version='0.1.0',
     author='Darren Lester',
     author_email='derailed.dash@gmail.com',
-    description='Handy utility code, such as coloured logging',
-    long_description=open('README.md').read(),
+    description='Handy utility code, such as coloured logging.',
+    long_description='See the README in the project repo',
     long_description_content_type='text/markdown',
-    url='https://github.com/derailed-dash/dazbo_python_commons',
+    url='https://github.com/derailed-dash/dazbo-commons-py',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     classifiers=[
