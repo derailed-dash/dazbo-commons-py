@@ -20,14 +20,14 @@ dazbo-commons/
 │       └── colored_logging.py
 │
 ├── tests/
-│   ├── __init__.py
 │   └── test_colored_logging.py
 │
-├── README.md
-├── setup.py
-├── setup.cfg
+├── .env
+├── .gitignore
 ├── LICENSE
-└── requirements.txt
+├── README.md
+├── requirements.txt
+└── setup.py
 ```
 
 ## To Install and Use
