@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dazbo_commons',
-    version='0.1.1',
+    version='0.1.2',
     author='Darren Lester',
     author_email='derailed.dash@gmail.com',
     description='Handy utility code, such as coloured logging.',
@@ -20,7 +20,7 @@ setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        # list of required packages
+        'colorama',
     ],
     extras_require={
         'dev': [

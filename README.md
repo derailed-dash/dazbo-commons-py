@@ -35,7 +35,7 @@ dazbo-commons/
 You can simply install the package from [PyPi](https://pypi.org/project/dazbo-commons/). There's no need to clone this repo.
 
 ```bash
-pip install dazbo-commons
+pip install --upgrade dazbo-commons
 ```
 
 Then, in your Python code, include this `import`:
