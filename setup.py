@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dazbo_commons',
-    version='0.1.0',
+    version='0.1.1',
     author='Darren Lester',
     author_email='derailed.dash@gmail.com',
     description='Handy utility code, such as coloured logging.',

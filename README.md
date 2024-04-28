@@ -87,7 +87,9 @@ py -m pip install twine
 py -m pip install --upgrade build
 ```
 
-5. Build the package.
+5. Make any required updates to the `setup.py` file. E.g. the `version` attribute.
+
+6. Build the package.
 
 ```bash
 py -m build
@@ -95,11 +97,12 @@ py -m build
 
 This generates a `dist` folder in your project folder.
 
-6. Upload the package to [PyPi](https://pypi.org/). 
+7. Upload the package to [PyPi](https://pypi.org/). 
 
 Notes:
 - You'll need to create a free account, if you haven't done so already.
 - You'll need to generate an API token in _Account Settings_, for uploading to the API.
+- You may want to delete any previous builds.
 
 ```bash
 py -m twine upload dist/*
@@ -107,8 +110,4 @@ py -m twine upload dist/*
 
 You'll be prompted for your API token. In my experience, when doing this from a terminal inside VS Code, Ctrl-V doesn't work here. So I use Paste from the menu, and this works.
 
-4. Deactivate the virtual environment. E.g.
-
-```bash
-deactivate
-```
+And we're done!
