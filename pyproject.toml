@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dazbo_commons"
-version = "0.1.3"
+version = "0.1.4"
 authors = [{ name = "Darren Lester", email = "derailed.dash@gmail.com" }]
 description = "Handy utility code, such as coloured logging."
 readme = "README.md"

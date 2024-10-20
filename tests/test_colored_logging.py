@@ -1,11 +1,10 @@
-""" Test for colored_logging.py.
-
+""" 
+Test for colored_logging.py.
 Author: Darren
 """
 import logging
 import unittest
 from io import StringIO
-
 import dazbo_commons as dc
 
 class TestColoredLogging(unittest.TestCase):

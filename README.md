@@ -44,7 +44,7 @@ Then, in your Python code, include this `import`:
 import dazbo_commons as dc
 ```
 
-## Coloured Logging Module
+### Coloured Logging Module
 
 This module provides a function to retrieve a logger that logs to the console, with colour.
 
@@ -59,6 +59,25 @@ logger = dc.retrieve_console_logger(logger_name)
 logger.setLevel(logging.INFO) # Set threshold. E.g. INFO, DEBUG, or whatever
 
 logger.info("Some msg") # log at info level
+```
+
+### File Locations Module
+
+This module is used to retrieve a `Locations` class, which stores directory paths 
+based on the location of a specified script. 
+This makes it convenient to manage and access different file and directory paths 
+relative to a given script's location.
+
+Example:
+
+```python
+import dazbo_commons as dc
+APPNAME = "My_App"
+
+locations = get_locations(APP_NAME)
+
+with open(locations.input_file, mode="rt") as f:
+    input_data = f.read().splitlines()
 ```
 
 ## To Build From Package Source
@@ -79,7 +98,14 @@ py -m pip install -r requirements.txt
 3. Run tests. E.g.
 
 ```bash
+# Set env var so that the tests know how to find dazbo-commons
+export PYTHONPATH=src
+
 py -m unittest discover -v -s tests -p '*.py'
+
+# Or, with pytest:
+py -m pip install pytest
+pytest
 ```
 
 4. Install packages for actually creating the build. (If nto already included in `requirements.txt`):
