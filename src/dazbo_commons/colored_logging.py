@@ -4,7 +4,14 @@ Date: 11/01/2021
 
 Create a new instance of "logger" in the client application
 Set to your preferred logging level
-And add the stream_handler from this module, if you want coloured output
+And add the stream_handler from this module, if you want coloured output.
+
+E.g.
+
+logger_identifier = "my_app"
+logger = dc.retrieve_console_logger(logger_identifier)
+logger.setLevel(logging.INFO)
+logger.info("Logger initialised.")
 """
 
 import copy

@@ -80,6 +80,19 @@ with open(locations.input_file, mode="rt") as f:
     input_data = f.read().splitlines()
 ```
 
+### Read Env File Module
+
+This simply looks for a .env file in the current launch dir, and loads environment variables from it.
+If the file is not found, it searches in parent directories up to three directories higher.
+
+```python
+import dazbo_commons as dc
+dc.get_envs_from_file()
+
+it not os.getenv('SOME_VAR'):
+    os.environ['SOME_VAR'] = getpass('Enter your sensitive var: ')
+```
+
 ## To Build From Package Source
 
 1. Create a Python virtual environment and activate. E.g.
@@ -100,6 +113,7 @@ py -m pip install -r requirements.txt
 ```bash
 # Set env var so that the tests know how to find dazbo-commons
 export PYTHONPATH=src
+# Or in PS: $env:PYTHONPATH="src"
 
 py -m unittest discover -v -s tests -p '*.py'
 
@@ -108,7 +122,7 @@ py -m pip install pytest
 pytest
 ```
 
-4. Install packages for actually creating the build. (If nto already included in `requirements.txt`):
+4. Install packages for actually creating the build. (If not already included in `requirements.txt`):
 
 ```bash
 py -m pip install twine
